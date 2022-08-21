@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-        h1 {
+        h2 {
             color: #568f39;
+        }
+        .abc {
+            color: pink;
+        }
+        #xyz {
+            color: palegreen;
         }
     </style>
 </head>
 <body>
-    <h1>CSS Cascade Style Sheet</h1>
+    <h1 class="abc">CSS Cascade Style Sheet</h1>
     <div style="color:blue;">串接樣式表</div>
     <h2>分類</h2>
     <ul>    
-        <li>嵌入式</li>
-        <li>內部</li>
-        <li>外部</li>
+        <li id="xyz">嵌入式</li>
+        <li class="abc">內部</li>
+        <li class="abc">外部</li>
+    </ul>
+    <h2>選取器 Selector</h2>
+    <ul>
+        <li>標籤 tag</li>
+        <li>類別 class (可重複使用)</li>
+        <li>id （不可重複使用）</li>
     </ul>
 </body>
 </html>
