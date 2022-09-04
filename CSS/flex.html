@@ -16,7 +16,7 @@
 
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
+            flex-direction: column;
             /* row, column, row-reverse, column-reverse */
             /* flex-flow: wrap row; */
 
@@ -25,20 +25,50 @@
                 flex-start, flex-end, center
                 stretch, baseline
             */
-            justify-content: space-between;
+            justify-content: flex-start;
             /* 
                 flex-start, flex-end, center
                 space-between, space-around, space-evenly
             */
         }
         .box {
-            width: 200px;
+            width: 100%;
+            /* flex-basis: 600px; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 0; */
             padding: 15px;
             background-color: #098;
+            flex: 0 0 400px;
+            /* flex: 1 0 0; */
+            /* 
+                flex: [grow shrink basis]
+            */
+
+        }
+        .box:nth-of-type(1){
+            /* flex-grow: 9; */
+            /* flex-shrink: 1; */
         }
         .box:nth-of-type(2){
-            margin-right: auto;
+            /* margin-right: auto; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
         }
+        .box:nth-of-type(3){
+            /* flex-grow: 2; */
+        }
+        /* 
+            flex-direction若為row
+            justify-content為水平對齊
+            align-items為垂直對齊
+            flex-basis為寬度
+            
+            flex-direction若為column
+            justify-content為垂直對齊
+            align-items為水平對齊
+            flex-basis為高度
+        
+        */
     </style>
 </head>
 <body>
