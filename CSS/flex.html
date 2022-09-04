@@ -16,7 +16,7 @@
 
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
+            flex-direction: row;
             /* row, column, row-reverse, column-reverse */
             /* flex-flow: wrap row; */
 
@@ -48,25 +48,32 @@
         .box:nth-of-type(1){
             /* flex-grow: 9; */
             /* flex-shrink: 1; */
+            order:3;
         }
         .box:nth-of-type(2){
             /* margin-right: auto; */
             /* flex-grow: 1; */
             /* flex-shrink: 2; */
+
+            order:1;
         }
         .box:nth-of-type(3){
             /* flex-grow: 2; */
+            order:2;
         }
         /* 
             flex-direction若為row
             justify-content為水平對齊
             align-items為垂直對齊
             flex-basis為寬度
-            
+
             flex-direction若為column
             justify-content為垂直對齊
             align-items為水平對齊
             flex-basis為高度
+
+            自然排序 -> 人工排序
+            數字越小排序前
         
         */
     </style>
@@ -91,7 +98,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusamus expedita corrupti dolorum nesciunt, eligendi ipsa consectetur iure animi libero odio quibusdam consequatur placeat, veritatis enim blanditiis nulla ipsum eius?
             </p>
         </div>
-        <!-- <div class="box">
+        <!-- 
+        <div class="box">
             <h2>title 4</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt temporibus fugit molestias mollitia nulla repellat quis sequi, error nobis?
@@ -108,7 +116,8 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusamus expedita corrupti dolorum nesciunt, eligendi ipsa consectetur iure animi libero odio quibusdam consequatur placeat, veritatis enim blanditiis nulla ipsum eius?
             </p>
-        </div> -->
+        </div> 
+        -->
     </div>
 </body>
 </html>
