@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1200px;
+            margin-inline: auto;
+            background-color: #ccc;
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* row, column, row-reverse, column-reverse */
+            /* flex-flow: wrap row; */
+
+            align-items: baseline;
+            /* 
+                flex-start, flex-end, center
+                stretch, baseline
+            */
+            justify-content: space-between;
+            /* 
+                flex-start, flex-end, center
+                space-between, space-around, space-evenly
+            */
+        }
+        .box {
+            width: 200px;
+            padding: 15px;
+            background-color: #098;
+        }
+        .box:nth-of-type(2){
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title 1 </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum debitis cumque voluptas amet odit vel excepturi ex fugiat in?
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis laudantium quis, saepe et est quam quisquam numquam consequatur fuga aut asperiores voluptatum ratione aliquam maiores accusantium? Doloribus dolorum illo nulla veritatis? Eligendi deleniti ut vero nemo eos, eum, doloremque temporibus voluptatem neque sequi dicta laboriosam, dolores molestias repudiandae delectus.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusamus expedita corrupti dolorum nesciunt, eligendi ipsa consectetur iure animi libero odio quibusdam consequatur placeat, veritatis enim blanditiis nulla ipsum eius?
+            </p>
+        </div>
+        <!-- <div class="box">
+            <h2>title 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt temporibus fugit molestias mollitia nulla repellat quis sequi, error nobis?
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 5</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis laudantium quis, saepe et est quam quisquam numquam consequatur fuga aut asperiores voluptatum ratione aliquam maiores accusantium? Doloribus dolorum illo nulla veritatis? Eligendi deleniti ut vero nemo eos, eum, doloremque temporibus voluptatem neque sequi dicta laboriosam, dolores molestias repudiandae delectus.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 6</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusamus expedita corrupti dolorum nesciunt, eligendi ipsa consectetur iure animi libero odio quibusdam consequatur placeat, veritatis enim blanditiis nulla ipsum eius?
+            </p>
+        </div> -->
+    </div>
+</body>
+</html>
