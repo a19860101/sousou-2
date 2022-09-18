@@ -43,6 +43,7 @@
             aspect-ratio: 1 / 1;
             background-color: #098;
             overflow: hidden;
+            position: relative; 
         }
         .card-img img {
             width: 100%;
@@ -61,6 +62,23 @@
             right: 5px;
             border-radius: 50%;
             /* clip-path: circle(); */
+            z-index: 999;
+        }
+        .card-collect {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fa0;
+            position: absolute;
+            bottom: -100px;
+            left: 10px;
+            transition: 400ms;
+        }
+        .card:hover .card-collect{
+            bottom: 10px;
+        }   
+        .card-collect:hover {
+            background-color: #098;
         }
     </style>
 </head>
@@ -70,6 +88,7 @@
             <div class="card">
                 <div class="card-avatar"></div>
                 <div class="card-img">
+                    <div class="card-collect"></div>
                     <img src="https://picsum.photos/id/32/800/400" alt="">
                 </div>
                 <div class="card-body">
